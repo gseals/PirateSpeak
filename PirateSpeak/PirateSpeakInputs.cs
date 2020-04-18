@@ -16,7 +16,6 @@ namespace PirateSpeak
             for (int i = 0; i < incomingWord.Length; i++)
             {
                 trashWords = incomingList.Where(item => item.Contains(charIncoming[i])).ToList();
-
             }
             foreach (var stuff in trashWords)
             {
